@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+  <script src="./js/contact.js"></script>
+  <title>Contact</title>
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+      <nav>
+        <div class="logo">
+          <h2>Or Perez</h2>
+        </div>
+        <ul class="nav-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+
+  <div class="wrapper">
+    <form id="form" action="https://formspree.io/f/mqknjpvp" method="post">
+      <fieldset>
+        <legend>Your contact information</legend>
+        <label for="first">First Name:</label>
+        <input type="text" id="first" name="first" required>
+        <label for="last">Last Name:</label>
+        <input type="text" id="last" name="last">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+      <fieldset>
+        <legend>Enter your comment & time</legend>
+        <label for="comn">Add your comment:</label>
+        <input type="text" id="comn" name="comn" required>
+        <label for="ampm">Choose a time for your meeting:</label>
+        <input type="time" id="ampm" name="ampm" min="09:00" max="18:00" required>
+         <small>Office hours are 9am to 6pm</small>
+      </fieldset>
+      <button type="submit" class="sub-btn">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <ul class="footer-content">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="footer-bottom">
+      <div>This page was built using:</div>
+      <pre id="arrPrint"></pre>
+    </div>
+    
+  </div>
+</body>
+<script src="./js/footer.js"></script>
+</html>
